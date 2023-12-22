@@ -1,0 +1,15 @@
+print("Welcome to Mama Mia pizeria")
+
+Diameter = int(input("Enter the diameter of the pizza  (inches): "))
+
+Rental_Cost = 1
+Labour_Cost = 0.75
+Materials_Cost = 0.50
+HST = 0.13
+
+Subtotal = Rental_Cost + Labour_Cost + Materials_Cost * Diameter
+
+Tax = Subtotal * HST
+Total = Tax + Subtotal
+
+print("The cost of making the pizza is: ${:0.2f}." . format(Total))
